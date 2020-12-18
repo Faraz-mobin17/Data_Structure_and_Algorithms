@@ -10,7 +10,7 @@
 
 [Data Structures (SOS) (Revised First Edition) by Seymour Lipschutz](https://www.amazon.in/Data-Structures-SOS-Revised-First-ebook/dp/B00JACCBI8/ref=sr_1_8?dchild=1&keywords=data+structure+made+easy&qid=1608229915&sr=8-8)
 
-##Internet Resources
+## Internet Resources
 [Data Structre and Algorithms with C++ Practical Implementation (Full Course)](https://www.youtube.com/playlist?list=PLIY8eNdw5tW_zX3OCzX7NJ8bL1p6pWfgG)
 
 
