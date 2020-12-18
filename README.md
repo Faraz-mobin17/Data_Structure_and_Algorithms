@@ -52,3 +52,14 @@
 [Data Structure by Saurabh Shukla Sir](https://www.youtube.com/playlist?list=PLsFNQxKNzefJNztGGoQC-59UhSwIaiIW3)
 
 [C++ Full Course | C++ Tutorial | Data Structure & Algorithms](https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ)
+
+
+## Resources for Practice
+
+[Hacker Rank](https://www.hackerrank.com/)
+[Codility](https://codility.com/Programmers/lessons)
+[Coderbyte](https://coderbyte.com/)
+[Leetcode](https://leetcode.com/)
+[Codewars](https://codewars.com)
+[geeksforgeeks](practice.geeksforgeeks.org/)
+[algoexpert](https://algoexpert.io)
