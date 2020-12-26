@@ -44,6 +44,50 @@ struct node* insertInEmpty(struct node* last, int data)
 	}
 }
 
+struct node* del(struct node* last,int data) 
+{
+    struct node* tmp,*p;
+    if (last == NULL)
+    {
+        printf("The list is empty\n");
+        return;
+    }
+    if (last->link == && last->info == data) //deletion of only node
+    {
+        tmp = last;
+        last = NULL;
+        free(tmp);
+        return last;
+    }
+    if (last->link->info == data) //deletion of first node
+    {
+        tmp = last->link;
+        last->link = tmp->link;
+        free(tmp);
+        return last;
+    }
+    p = last->link; //deletion of nodes in between
+    while(p->link != last) 
+    {
+        if (p->link->info == data) 
+        {
+            tmp = p->link;
+            p->link = tmp->link;
+            free(tmp);
+            return last;
+        }
+        p = p->link;
+        if (last->info == data)
+        {
+            tmp = last;
+            p->link = tmp->link;
+            free(tmp);
+            return last;
+        }
+        printf("The element %d is not present: ",data);
+        return last;
+    }
+}
 int main(int argc, char const *argv[])
 {
 	/* code */
