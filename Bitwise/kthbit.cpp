@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-bool checkKthBit(int n, int k)
+//.note : to check with right shift use this as a condition if (((n >> (k - 1)) & 1) == 1) 
+void checkKthBit(int n, int k)
 {
-    if (n & (1 << (k - 1)))
-        return true;
+    if (n & (1 << (k - 1) != 0))
+        cout << "Yes" << endl;
     else
-        return false;
+        cout << "NO" << endl;
 }
 
 int main() {
@@ -17,10 +17,7 @@ int main() {
         cin >> n;
         int k;
         cin >> k;
-        if (checkKthBit(n,k))
-            cout << "Yes" << endl;
-        else
-            cout << "No" << endl;
+        checkKthBit(n,k);
     }
     return 0;
 }
