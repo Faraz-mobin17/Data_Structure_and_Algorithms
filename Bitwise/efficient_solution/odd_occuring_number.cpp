@@ -3,15 +3,10 @@ using namespace std;
 
 int findOdd(int arr[], int n)
 {
-	for (int i = 0;i < n; i += 1)
-	{
-		int count = 0;
-		for (int j = 0; j < n; j += 1)
-			if (arr[i] == arr[j])
-				count++;
-		if (count % 2) // if the count is odd then return
-			return (arr[i]);
-	}
+	int res = 0;
+	for (int i = 0; i < n; i += 1)
+		res = res ^ arr[i];
+	return res;
 }
 
 
@@ -22,7 +17,7 @@ int main(int argc, char const *argv[])
 	cin >> t;
 	while (t--)
 	{
-		int arr[] = {8,7,7,8,8};
+		int arr[] = {4,3,4,4,4,5,5};
 		int answer = findOdd(arr,7);
 		cout << answer << endl;
 	}
