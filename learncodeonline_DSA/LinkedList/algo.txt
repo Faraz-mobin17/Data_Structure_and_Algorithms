@@ -1,0 +1,120 @@
+Linked List Algo
+
+[HOW TO CREATE LINKED LIST]
+class Node
+    public:
+        [data_type] [variable_name]
+        Node* next
+[END OF CREATING OF LINKED LIST]
+
+
+[HOW TO CREATE A NODE]
+    Node* [variable_name] = new Node();
+[END OF HOW TO CREATE A NODE]
+
+FUNCTION: PRINT LIST(Node *node)
+        [START OF WHLE]
+STEP 1. Repeat STEP 2 and 3 WHILE node != NULL
+STEP 2.     print node->data
+STEP 3.     set node = node->next
+        [END OF WHILE]
+
+FUNCTION: COUNT(Node* head)
+
+STEP 1. Set count = 0
+STEP 2. Set current = head
+        [START OF WHILE]
+STEP 3. Repeat STEP 4 and 5 WHILE current != NULL
+STEP 4.     count = count + 1
+STEP 5.     current = current->next
+        [END OF WHILE]
+
+FUNCTION: PUSH(Node** head_ref, int new_value)
+
+STEP 1. Create a Node [Node IS NEWLY CREATED NODE]
+STEP 2. Set Node->data = new_value
+STEP 3. Set Node->next = (*head_ref)
+STEP 4. Set (*head_ref) = Node
+
+
+FUNCTION: INSERTBEFORE(Node* prev_node, int new_value)
+        [START OF IF]
+STEP 1. Check if prev_node = NULL
+STEP 2.     return
+        [END OF IF]
+STEP 3. Create a Node [Node IS NEWLY CREATED NODE]
+STEP 4. Set Node->data = new_value
+STEP 5. Node->next = prev_node->next
+STEP 6. prev_node->next = Node
+
+
+FUNCTION: INSERTATEND(Node** head_ref, int new_value)
+
+STEP 1. Create a Node [Node IS NEWLY CREATED NODE]
+STEP 2. Set Node->data = new_value
+STEP 3. Set Node->next = NULL
+        [START OF WHILE]
+STEP 4. Repeat STEP 5 and 6 WHILE *head_ref == NULL [CHECKING IF NEWLY CREATED NODE IS THE ONLY NODE]
+STEP 5.     *head_ref = Node
+STEP 6.      return
+        [END OF WHILE]
+
+        [START OF WHILE]
+STEP 7. Repeat STEP 8 WHILE last->next != NULL
+STEP 8.     last = last->next
+        [END OF WHILE]
+STEP 9. Set last->next = Node
+STEP 10. return
+
+
+FUNCTION: DELETENODE(Node** head_ref, int key)
+
+STEP 1. Node* temp = *head_ref and Node* prev;
+STEP 2. [START OF IF] [CASE 1 IF THE DATA IS ON FIRST NODE MEANS FIRST NODES NEEDS TO BE DELETED]
+STEP 3. IF temp != NULL AND key == data
+STEP 4.    *head_ref  = temp->next
+STEP 5.     return
+        [END OF IF]
+
+        [START OF WHILE] [CASE 2 TRAVERSE AND DELETE NODE]
+STEP 6. Repeat STEP 7 and 8 WHILE temp != NULL AND temp->data != key
+STEP 7.    prev = temp
+STEP 8.    temp = temp->next
+        [END OF WHILE]
+
+        [START OF IF] [CASE 3 NO NODE FOUND]
+STEP 9.  IF temp == NULL 
+STEP 10.    return
+        [END OF IF]
+
+STEP 11. prev->next = temp->next
+STEP 12. free(temp)
+
+
+FUNCTION: DELETELIST(Node** head_ref)
+
+STEP 1. Node* current = *head_ref
+STEP 2. Node* next;
+        [START OF WHILE]
+STEP 3. Repeat STEP 4 , 5 and 6 WHILE current != NULL
+STEP 4.     next = current->next
+STEP 5.     free(current)
+STEP 6.     current = next
+        [END OF WHILE]
+
+STEP 7. *head_ref = NULL
+
+
+
+FUNCTION: REVERSELIST(Node* node)
+
+STEP 1. Node* current = node
+STEP 2. Node* prev = NULL, *next = NULL
+        [START OF WHILE]
+STEP 3. Repeat STEP 4,5,6 and 7 WHILE current != NULL
+STEP 4.     next = current->next
+STEP 5.     current->next = prev
+STEP 6.     prev = current;
+STEP 7      current = next
+        [END OF WHILE]
+STEP 8. node = prev

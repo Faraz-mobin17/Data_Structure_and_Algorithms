@@ -1,0 +1,9 @@
+[HOW TO TAKE OUT DIVISOR]
+
+FUNCTION: DIVISOR(INT n) 
+
+    [FOR LOOP STARTS HERE]
+STEP 1. FOR i:= 1 until i <= n
+STEP 2.     IF n % i = 0
+STEP 3.         print i
+    [FOR LOOP ENDS HERE]

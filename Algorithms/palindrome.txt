@@ -1,0 +1,22 @@
+[PALINDROME PROGRAM]
+
+[START]
+
+STEP 1. Declare following variable temp,n,lastDigit,reverseNumber:= 0
+STEP 2. Take input <- n
+STEP 3. Set temp:= n
+        [WHILE START FROM HERE]
+STEP 4. Repeat Step 5 , 6 and 7 WHILE n > 0
+STEP 5.     Set lastDigit:= n % 10
+STEP 6.     Set reverseNumber:= reverseNumber * 10 + lastDigit
+STEP 7.     Set n := n / 10
+        [WHILE ENDS HERE]
+
+        [IF STARTS HERE]
+
+STEP 8. IF reverseNumber = temp
+STEP 9.     print message
+STEP 10. ELSE 
+STEP 11.    print message
+
+        [IF ELSE ENDS HERE]

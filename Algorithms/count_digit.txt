@@ -1,0 +1,21 @@
+[HOW TO COUNT THE DIGIT IN A NUMBER]
+\
+[ITERATIVE APPROACH]
+
+STEP 1. Declare a var name digit,lastDigit,count:= 0
+STEP 2. Take input <- digit
+        [START OF WHILE]
+STEP 3. Repeat STEP 4 and 5 WHILE digit > 0
+STEP 4.     count += 1
+STEP 5.     digit /= 10
+        [END OF WHILE]
+STEP 6. print count
+
+[RECURSIVE APPROACH]
+
+FUNCTION: COUNTDIGIT(INT N) 
+        [IF STARTS HERE]
+STEP 1. IF N = 0
+STEP 2.     return 0
+        [IF ENDS HERE]
+STEP 3. return 1 + COUNTDIGIT(N / 10)

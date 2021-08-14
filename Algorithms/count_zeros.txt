@@ -1,0 +1,17 @@
+[COUNT ZEROS IN NUMBER]
+
+FUNCTION: COUNTZEROS(INT n)
+
+STEP 1. Set fact:= 1
+    [FOR LOOP STARTS]
+STEP 2. FOR i:= 2 till i <= n
+            Set fact:= fact * i
+    [FOR LOOP ENDS HERE]
+STEP 3. Set res:= 0
+
+        [WHILE LOOP STARTS HERE]
+STEP 4. Repeat STEP 5 and 6 WHILE fact % 10 = 0
+STEP 5.     res++
+STEP 6.     fact:= fact / 10
+        [WHILE ENDS HERE]
+STEP 7. return res

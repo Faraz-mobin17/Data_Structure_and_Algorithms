@@ -1,0 +1,93 @@
+Doubly Linked List Algo
+
+[HOW TO CREATE DOUBLY LINKED LIST]
+class Node
+    public:
+        [data_type] [variable_name]
+        Node* next
+        Node* prev
+[END OF CREATING OF DOUBLY LINKED LIST]
+
+[HOW TO CREATE A NODE]
+    Node* [variable_name] = new Node();
+[END OF HOW TO CREATE A NODE]
+
+FUNCTION: PUSH(Node** head_ref, int data)
+
+STEP 1. Create a Node [Node IS NEWLY CREATED NODE]
+STEP 2. Set Node->data = data
+STEP 3. Set Node->next = (*head_ref)
+STEP 4. Set Node->prev = NULL
+
+        [IF START FROM HERE]
+STEP 5. IF *head_ref != NULL
+            Set (*head_ref)->prev = Node [NOTE HERE NODE IS NEWLY CREATED NODE]
+        [END OF IF]
+STEP 6. Set (*head_ref) = Node
+
+FUNCTION: INSERTAFTER(Node* prev_node, int data)
+
+STEP 1. [IF START]
+STEP 2. IF prev_node == NULL
+STEP 3.     print message
+STEP 4.     return
+        [END START]
+
+
+FUNCTION: ADDTOLAST(Node** head_ref, int data)
+
+STEP 1. Create a Node 
+STEP 2. Set Node->data = data
+STEP 3. Set Node->next = NULL
+        [IF START FROM HERE]
+STEP 4. IF (*head_ref) == NULL
+STEP 5.     Node->prev = NULL
+STEP 6.     (*head_ref) = Node
+STEP 7.     return
+        [END OF IF]
+
+
+FUNCTION: DELETENODE(Node** head_ref, Node *key)
+
+     [IF START FORM HERE]
+
+STEP 1. IF *head_ref == NULL OR key == NULL
+STEP 2.      return
+
+    [END OF IF]
+
+    [IF START FROM HERE]
+
+STEP 3. IF *head_ref == key [CASE 1 WHEN WE WANT TO DELTE HEAD NODE]
+STEP 4.     *head_ref = key->next
+
+    [END OF IF HERE]
+
+    [IF START FROM HERE]
+
+STEP 5. IF key->next != NULL [CASE 2]
+STEP 6.   key->next->prev = key->prev
+
+    [END OF IF HERE]
+
+    [START OF IF HERE]
+
+STEP 7. IF key->prev != NULL [CASE 3]
+STEP 8.     key->prev->next = key->next
+
+    [END OF IF HERE]
+
+STEP 9. FREE key
+STEP 10. return
+
+FUNTION: PRINTLIST(Node* node)
+        [IF START FROM HERE]
+
+STEP 1.     IF node == NULL
+STEP 2.        print message
+STEP 3.        return
+        [START OF WHILE]
+STEP 4. Repeat STEP 5 and 6 WHILE node != NULL
+STEP 5.     print node->data
+STEP 6.     node = node->next
+        [END OF WHILE]

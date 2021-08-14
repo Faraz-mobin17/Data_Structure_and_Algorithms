@@ -1,0 +1,14 @@
+algorithm to delete node 
+
+step 1. store the *head_ref in temp variable and create *prev empty variable
+
+step 2. find the prev
+step 3.change the next of prev with temp->next;
+
+step 4. free memory
+
+# CASES
+
+1. head node to be deleted
+2. search node to be deleted
+

@@ -1,0 +1,13 @@
+[FIBONNACI PROGRAM]
+
+FUNCTION: FIB(INT n)
+
+STEP 1. Set t1:= 0, t2:= 1, nextTerm
+        [FOR LOOP STARTS HERE]
+STEP 2. FOR i:= 1 until i <= n
+STEP 3.     print t1
+STEP 4.     nextTerm:= t1 + t2
+STEP 5.     t1 = t2
+STEP 6.     t2 = nextTerm
+        [FOR ENDS HERE]
+STEP 7. return

@@ -1,5 +1,5 @@
 //Back-end complete function Template for C++
-
+#include <bits/stdc++.h>
 // function to check if n is prime
 bool isPrime(int n)
 {
@@ -7,8 +7,8 @@ bool isPrime(int n)
     return false;
     
     for(int i=2;i<=sqrt(n);i++)
-    if(n%i==0)
-    return false;
+         if(n%i==0)
+            return false;
     
     return true ;
 }

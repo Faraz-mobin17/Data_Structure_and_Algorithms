@@ -1,0 +1,14 @@
+reverse linked list
+
+step 1. prev = NULL
+        next = NULL
+        current = HEAD
+
+step 2. next = current->next
+        current->next = prev
+
+step 3. prev = current
+        current = next
+
+update HEAD with prev
+

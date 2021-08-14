@@ -1,0 +1,8 @@
+
+how to delete entire list
+
+step1. get the ref of head and create another var *next
+
+step2. now use while loop to keep moving on and store the next value of current in next var after that free the current var then update the current with next
+
+step3.  after the loop finishes make head null

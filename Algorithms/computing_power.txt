@@ -1,0 +1,10 @@
+[COMPUTING POWER PROGRAM]
+
+FUNCTION: POWER(INT n,INT x)
+
+STEP 1. Set res:= 1
+        [FOR LOOP STARTS i := 1]
+STEP 2. Repeat STEP 3. until i <= n
+STEP 3.     Set res:= res * x
+        [FOR LOOP ENDS HERE]
+STEP 4. return res
