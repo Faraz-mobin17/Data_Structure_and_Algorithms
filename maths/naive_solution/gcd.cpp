@@ -1,9 +1,12 @@
-#include <iostream>
-using namespace std;
 // naive solution
 
-int gcd(int a , int b)
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int gcd(int a, int b) 
 {
+
 	int res = min(a,b);
 	while (res > 0)
 	{
@@ -11,13 +14,19 @@ int gcd(int a , int b)
 			break;
 		res--;
 	}
+	
 	return res;
 }
 
-int main(int argc, char const *argv[])
+int main() 
 {
-	/* code */
-	int ans = gcd(15,12);
+	int a,b;
+
+	cin >> a >> b;
+
+	int ans = gcd(a,b);
+
 	cout << ans << endl;
+
 	return 0;
 }

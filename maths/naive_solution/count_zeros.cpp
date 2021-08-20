@@ -1,5 +1,4 @@
 // count the number of trailing zeros in the program
-
 #include <iostream>
 #include <cmath>
 using namespace std;
