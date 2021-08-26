@@ -7,7 +7,7 @@ int lcm(int a, int b)
 	int res = max(a,b);
 	while (1)
 	{
-		if (res % a == 0 && res % b == 0)
+		if (a % res == 0 && b % res == 0)
 			return res;
 		res += 1;
 	}
