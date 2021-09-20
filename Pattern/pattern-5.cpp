@@ -1,17 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int N;
-    cin >> N;
-    for ( int i = 1; i < N; i += 1)
-    {
-        for (int j = N; j > i; j -= 1)
-        {
-            cout << j;
-        }
-        cout << endl;
-    }
-    return 0;
+int main() {
+	int n;
+	cout << "ENter value of N: " << "\n";
+	cin >> n;
+	for (int row = 1; row <= (2*n-1); row += 1) {
+		int totalCols = row > n ? 2 * n - row : row;
+		for (int col = 1; col <= totalCols; col++) {
+			cout << "*";
+		}
+		cout << "\n";
+	}
+	return 0;
 }
