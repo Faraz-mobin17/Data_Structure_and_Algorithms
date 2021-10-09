@@ -1,28 +1,21 @@
-#include <iostream>
-using namespace std;
-
-// OUTPUT: 
-
-// * * * * *
-//   * * * * *
-//    * * * * *
-//     * * * * *
-//      * * * * *
-
-int main() {
-
-	int n;
-	cin >> n;
-
-	for (int row = 1; row <= n; row += 1) {
-		for (int space = 1; space <= row; space += 1) {
-			cout << " ";
-		}
-		for (int col = n; col >= 1; col -= 1) {
-			cout << "* ";
-		}
-		cout << "\n";
-	}
-
-	return 0;
+#include<stdio.h>
+int main()
+{
+    int i, j, k = 0, l = 1, n = 5;
+    for (i = 1; i <= n; i++)
+    {
+        for (j = 1; j <= i; j++, k++, l++)
+        {
+            if (k % 2 == 0)
+            {
+                printf("%4c", (char)(l + 96));
+            }
+            else
+            {
+                printf("%4c", (char)(l + 64));
+            }
+        }
+        printf("\n");
+    }
+    return 0;
 }

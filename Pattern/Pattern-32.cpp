@@ -1,26 +1,23 @@
-// 10000
-// 01000
-// 00100
-// 00010
-// 00001
-
+// 32
+// E
+// D E
+// C D E
+// B C D E
+// A B C D E
 #include <iostream>
 using namespace std;
-
-int main(int argc, char const *argv[])
+int main()
 {
-	int n;
-	cin >> n;
+ 
+  int n;
+  cin >> n;
 
-	for (int row = 1; row <= n; row += 1 ) {
-		for (int col = 1; col <= n; col += 1) {
-			if (row == col) {
-				cout << 1;
-			} else {
-				cout << 0;
-			}
-		}
-		cout << "\n";
-	}
-	return 0;
+  for (int row = n; row >= 1; row -= 1) {
+  	for (int col = row; col <= n; col += 1) {
+  		cout << (char)(col + 64) << " ";
+  	}
+  	cout << endl;
+  }
+  return 0;
 }
+ 
