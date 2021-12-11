@@ -1,4 +1,9 @@
 # Resources to learn Datastructure and algorithms
+
+# Important Resources (highly recommended)
+
+[Kunal Kushwaha DSA Course](https://www.youtube.com/c/KunalKushwaha/playlists)
+[Love Babbar DSA Course](https://www.youtube.com/c/LoveBabbar1/videos)
 ## Books 
 [DataStructure through C in Depth by S.K Srivastava/Deepali Srivasta](https://www.amazon.in/Data-Structures-Through-C-Depth/dp/8176567418/ref=sr_1_1?dchild=1&keywords=data+structure+through+c&qid=1608229869&sr=8-1)
 
